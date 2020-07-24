@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- My network doesn't download that and seems useless for x2.. -->
   <remove-project name="ezio84/android_vendor_images" />
 
   <!-- AOSP changed to Lineage repos -->
@@ -16,13 +17,15 @@
   <project path="hardware/qcom-caf/msm8996/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-17.1-caf-msm8996" />
   <project path="hardware/qcom-caf/msm8996/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-17.1-caf-msm8996" />
   <project path="hardware/qcom-caf/msm8996/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-17.1-caf-msm8996" />
-  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_commona" groups="qcom,pdk-qcom" revision="lineage-17.1" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" revision="lineage-17.1" />
   <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-17.1-caf" remote="github" />
 
   <!-- device trees -->
-  <project name="LineageOS/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="lineage-17.1"/>
+  <!--<project name="LineageOS/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="lineage-17.1"/>-->
+
   <!--<project name="AOSiP-Devices/device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="ten"/>-->
-  <!--<project name="RevengeOS-Devices/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="r10.0"/>-->
+  <!--<project name="AICP/device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="q10.0"/>-->
+  <project name="RevengeOS-Devices/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="r10.0"/>
 
   <project name="kprkpr/abc_android_device_leeco_x2" path="device/leeco/x2" remote="github" revision="lineage-17.1"/>
 
@@ -32,7 +35,7 @@
   <!--<project name="mosimchah/kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="github" revision="q10.0-oc"/>-->
   <!--<proyect name="AOSiP-Devices/kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="github" revision="ten"/>-->
   <proyect name="LineageOS/android_kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="github" revision="lineage-17.1"/>
-  <!-- KERNEL NEEDS change yylloc to extern yylloc in gcc10 when error -->
+  <!-- KERNEL NEEDS change yylloc to extern yylloc in gcc10 when error in line it says-->
 
   <!-- vendor / blobs -->
   <project name="TheMuppets/proprietary_vendor_leeco" path="vendor/leeco" remote="github" revision="lineage-17.1"/>
