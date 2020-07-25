@@ -14,11 +14,11 @@
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/bt" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-17.1-caf-msm8996" />
-  <project path="hardware/qcom-caf/msm8996/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-17.1-caf-msm8996" />
-  <project path="hardware/qcom-caf/msm8996/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-17.1-caf-msm8996" />
-  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" revision="lineage-17.1" />
-  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-17.1-caf" remote="github" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="DirtyUnicorns/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="q10x-caf-8996" />
+  <project path="hardware/qcom-caf/msm8996/display" name="DirtyUnicorns/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="q10x-caf-8996" />
+  <project path="hardware/qcom-caf/msm8996/media" name="DirtyUnicorns/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="q10x-caf-8996" />
+  <project path="hardware/qcom-caf/common" name="DirtyUnicorns/android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" revision="q10x" />
+  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-17.1-caf" remote="github" /> <!-- There is DU but p9x-caf -->
 
   <!-- device trees -->
   <!--<project name="LineageOS/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="github" revision="lineage-17.1"/>-->
@@ -41,10 +41,24 @@
   <project name="TheMuppets/proprietary_vendor_leeco" path="vendor/leeco" remote="github" revision="lineage-17.1"/>
 
   <!-- More needed repos -->
-  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="lineage-17.1" />
-  <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="lineage-17.1-legacy" />
-  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="lineage-17.1-legacy-um" />
-  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" remote="github" revision="lineage-17.1" />
+  <project path="device/qcom/sepolicy" name="DirtyUnicorns/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="q10x" />
+  <project path="device/qcom/sepolicy-legacy" name="DirtyUnicorns/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="q10x-legacy" />
+  <!--<project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" remote="github" groups="qcom,pdk-qcom" revision="lineage-17.1-legacy-um" />-->
+  <project path="vendor/codeaurora/telephony" name="DirtyUnicorns/android_vendor_codeaurora_telephony" remote="github" revision="q10x" />
+  <!-- Vendor qcom AOSP (DU) -->
+  <project path="vendor/qcom/opensource/audio" name="DirtyUnicorns/android_vendor_qcom_opensource_audio" remote="github" revision="q10x" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="LineageOS/android_vendor_qcom_opensource_system_bt" remote="github" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="DirtyUnicorns/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="q10x" />
+  <project path="vendor/qcom/opensource/dataservices" name="DirtyUnicorns/android_vendor_qcom_opensource_dataservices" remote="github" revision="q10x" />
+  <project path="vendor/qcom/opensource/interfaces" name="DirtyUnicorns/android_vendor_qcom_opensource_interfaces" remote="github" revision="q10x" />
+  <project path="vendor/qcom/opensource/power" name="DirtyUnicorns/android_vendor_qcom_opensource_power" remote="github" revision="q10x" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="DirtyUnicorns/android_vendor_qcom_opensource_thermal-engine" remote="github" revision="q10x" />
+  <!-- Vendor qcom LOS -->
+  <project path="vendor/qcom/opensource/fm-commonsys" name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" remote="github" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" remote="github" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="LineageOS/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="github" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="LineageOS/android_vendor_qcom_opensource_bluetooth_ext" remote="github" revision="lineage-17.1" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="LineageOS/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="github" revision="lineage-17.1" />
 
  
  
