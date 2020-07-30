@@ -3,6 +3,10 @@
   <!-- My network doesn't download that and seems useless for x2.. -->
   <remove-project name="ezio84/android_vendor_images" />
 
+  <!-- Settings app from abc to AOSP -->
+  <remove-proyect name="packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+
   <!-- AOSP changed to Lineage repos -->
   <remove-project name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" remote="github" revision="lineage-17.1"/>
@@ -22,7 +26,8 @@
 
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="DirtyUnicorns/android_external_tinycompress" remote="github" revision="q10x" />
-
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" remote="github" revision="lineage-17.1" />
 
 
   <!-- FOR BELOW REPO, REMOVE BUILD AND CONFIG FILES, IT CONFLICTS WITH VENDOR/EXTRA FROM ABC. -->
@@ -70,10 +75,7 @@
   <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" remote="github" revision="lineage-17.1" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="lineage-17.1" />
 
-
-
-
-
+  <!-- Bluetooth and his deps at Email and UnifiedEmaill (AOSP)-->
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="LineageOS/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="github" revision="lineage-17.1" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/Email" />
