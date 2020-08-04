@@ -48,5 +48,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true 
 
+USE_LIB_PROCESS_GROUP := true
+
 # inherit from the proprietary version
 -include vendor/leeco/x2/BoardConfigVendor.mk

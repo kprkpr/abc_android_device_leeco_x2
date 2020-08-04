@@ -4,7 +4,7 @@
   <remove-project name="ezio84/android_vendor_images" />
 
   <!-- Settings app from abc to AOSP -->
-  <remove-proyect name="packages/apps/Settings" />
+  <remove-project path="packages/apps/Settings" name="abc_packages_apps_Settings" groups="pdk-fs" remote="abc" revision="q" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
 
   <!-- AOSP changed to Lineage repos -->
@@ -22,7 +22,7 @@
   <project path="hardware/qcom-caf/msm8996/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="q10x-caf-8996" />
   <project path="hardware/qcom-caf/msm8996/display" name="DirtyUnicorns/android_hardware_qcom_display" remote="github" revision="q10x-caf-8996" />
   <project path="hardware/qcom-caf/msm8996/media" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="q10x-caf-8996" />
-  <project path="hardware/qcom-caf/common" name="DirtyUnicorns/android_hardware_qcom-caf_common" remote="github" revision="q10x" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="github" revision="lineage-17.1" />
 
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="DirtyUnicorns/android_external_tinycompress" remote="github" revision="q10x" />
